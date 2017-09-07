@@ -10,20 +10,23 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
 
-    var emoji = "NO EMOJI"
+    var emojiPass = Emoji()
     
     @IBOutlet weak var emojiLabel: UILabel!
     
     @IBOutlet weak var definition: UILabel!
     
+    @IBOutlet weak var categoryLabel: UILabel!
+    
+    @IBOutlet weak var birthYearLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        emojiLabel.text = emoji
-        
-        if emoji == "💩" {
-            definition.text = "A cute turd"
-        }
+        emojiLabel.text = emojiPass.appearance
+        birthYearLabel.text = "Birthyear : \(emojiPass.birthYear)"
+        categoryLabel.text = "Category: \(emojiPass.category)"
+        definition.text = emojiPass.definition
     }
 
     override func didReceiveMemoryWarning() {

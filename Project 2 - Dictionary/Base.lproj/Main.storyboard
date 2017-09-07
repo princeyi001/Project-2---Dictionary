@@ -63,7 +63,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4g-MG-hTx">
-                                <rect key="frame" x="103" y="403" width="169" height="21"/>
+                                <rect key="frame" x="103" y="373" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtn-E4-nS6">
+                                <rect key="frame" x="152" y="414" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthyear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUc-4A-NAg">
+                                <rect key="frame" x="152.5" y="455" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,12 +84,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="g4g-MG-hTx" firstAttribute="centerX" secondItem="7sx-eZ-TeB" secondAttribute="centerX" id="Gke-g5-Shs"/>
+                            <constraint firstItem="MUc-4A-NAg" firstAttribute="centerX" secondItem="7sx-eZ-TeB" secondAttribute="centerX" id="LMi-oj-R9E"/>
+                            <constraint firstItem="Qtn-E4-nS6" firstAttribute="top" secondItem="g4g-MG-hTx" secondAttribute="bottom" constant="20" id="eQt-pD-rTJ"/>
                             <constraint firstItem="WeI-ak-GvE" firstAttribute="top" secondItem="a78-Ze-8ae" secondAttribute="bottom" constant="50" id="jjn-1M-uZO"/>
+                            <constraint firstItem="MUc-4A-NAg" firstAttribute="top" secondItem="Qtn-E4-nS6" secondAttribute="bottom" constant="20" id="mbp-Cp-hcJ"/>
+                            <constraint firstItem="Qtn-E4-nS6" firstAttribute="centerX" secondItem="7sx-eZ-TeB" secondAttribute="centerX" id="pqb-UQ-MUN"/>
                             <constraint firstItem="WeI-ak-GvE" firstAttribute="centerX" secondItem="7sx-eZ-TeB" secondAttribute="centerX" id="wye-M7-SPM"/>
-                            <constraint firstItem="g4g-MG-hTx" firstAttribute="top" secondItem="WeI-ak-GvE" secondAttribute="bottom" constant="50" id="zW9-FG-vRU"/>
+                            <constraint firstItem="g4g-MG-hTx" firstAttribute="top" secondItem="WeI-ak-GvE" secondAttribute="bottom" constant="20" id="zW9-FG-vRU"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="MUc-4A-NAg" id="yIb-FP-p2F"/>
+                        <outlet property="categoryLabel" destination="Qtn-E4-nS6" id="fej-Ed-iu9"/>
                         <outlet property="definition" destination="g4g-MG-hTx" id="8JO-ma-MsZ"/>
                         <outlet property="emojiLabel" destination="WeI-ak-GvE" id="7aZ-Rn-YDF"/>
                     </connections>
